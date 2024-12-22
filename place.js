@@ -83,7 +83,7 @@ console.log(countTotalSalary(employees))
 
 
 //5
-
+// в роботі \\
 function getAllPropValues(arr, prop) {
 
 }
