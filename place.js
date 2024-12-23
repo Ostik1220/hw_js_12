@@ -42,7 +42,7 @@ console.log(countProps(commands))
 //3
 
 const employees = [
-    {name: "Andrii", tasks: 34, salary: 15100, mood:"happy"},
+    {name: "Andrii", tasks: 34, salary: 15100, mood:"sad"},
     {name: "Marta", tasks: 26, salary: 14300, mood:"angry"},
     {name: "Jan", tasks: 35, salary: 14500, mood:"tired"},
     {name: "Oleg", tasks: 12, salary: 8700,mood: "happy"}
@@ -83,9 +83,23 @@ console.log(countTotalSalary(employees))
 
 
 //5
-// в роботі \\
 function getAllPropValues(arr, prop) {
-
+    let array = [];
+    for (let employee of arr) {  
+        array.push(employee.mood)
+}
+return array
 }
 
-console.log(countTotalSalary(employees))
+console.log(countTotalSalary(employees, 'mood'))
+
+//6
+const basket = [
+ {name:" apple", costPer1:5,},
+ {name: "meat", costPer1: 25,},
+ {name: "pinapple", costPer1: 100,},
+ {name: "big red fish from ocean", costPer1:150,}
+]
+function calculateTotalPrice(allProdcuts, productName){
+
+}
