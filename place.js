@@ -18,16 +18,16 @@ for(const keys of result) {
 
 //2 
 const commands = {
-    FirstTask (x, u) {
+    firstTask (x, u) {
         return x + u
     },
-    FirstSecond (x, u) {
+    firstSecond (x, u) {
         return x - u
     },
-    FirstThird (x, u) {
+    firstThird (x, u) {
         return x * u
     },
-    FirstFourth (x, u) {
+    firstFourth (x, u) {
         return x / u
     }
 }
@@ -86,20 +86,31 @@ console.log(countTotalSalary(employees))
 function getAllPropValues(arr, prop) {
     let array = [];
     for (let employee of arr) {  
-        array.push(employee.mood)
+        if(prop === product.mood){
+            array = (...(employee.mood))
+        }
 }
 return array
 }
 
-console.log(countTotalSalary(employees, 'mood'))
+console.log(countTotalSalary(employees, 'sad'))
 
 //6
 const basket = [
- {name:" apple", costPer1:5,},
+ {name:"apple", costPer1:5,},
  {name: "meat", costPer1: 25,},
  {name: "pinapple", costPer1: 100,},
  {name: "big red fish from ocean", costPer1:150,}
 ]
-function calculateTotalPrice(allProdcuts, productName){
-
+function calculateTotalPrice(allProdcuts, productName, amount){
+    let price = 0;
+for(let product of allProdcuts){
+    if(productName === product.name){
+        price = amount * product.costPer1
+    }
 }
+return price
+}
+
+console.log(calculateTotalPrice(basket, "apple", 7))
+console.log(calculateTotalPrice(basket, "big red fish from ocean", 8))
