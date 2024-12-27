@@ -86,14 +86,15 @@ console.log(countTotalSalary(employees))
 function getAllPropValues(arr, prop) {
     let array = [];
     for (let employee of arr) {  
-        if(prop === product.mood){
-            array = (...(employee.mood))
+        if(prop in employee){
+            array.push(employee[prop])
         }
 }
 return array
 }
 
-console.log(countTotalSalary(employees, 'sad'))
+console.log(getAllPropValues(employees, 'mood'))
+console.log(getAllPropValues(employees, 'tasks'))
 
 //6
 const basket = [
