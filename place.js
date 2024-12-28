@@ -99,7 +99,7 @@ console.log(getAllPropValues(employees, 'tasks'))
 //6
 const basket = [
  {name:"apple", costPer1:5,},
- {name: "meat", costPer1: 25,},
+ {name: "pork", costPer1: 25,},
  {name: "pinapple", costPer1: 100,},
  {name: "big red fish from ocean", costPer1:150,}
 ]
